@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="Es-Py">
+    <head>
+        <title>Walter Frontend</title>
+        <meta charset="UTF-8"/>
+        <link rel="stylesheet" href="estilo.css">
+    </head>
+    
+    <body>
+        
+        
+        <div class="container">
+            <h1>InfoAnime<img class="titulo" src="imges/img11.jpg" alt="logo"> </h1>
+            <h2>EMPECEMOS</h2>
+            <p>Ingresa tu correo electronico para registrarte o inicia sesion</p>
+            <input placeholder="correo electronico" type="email" id="email" onkeypress="validar_campo_login()">
+            <script>
+                var campo = document.getElementById('email').value;
+                var boton = documen.getElementById('Ingresar');
+            function validar_campo_login() {
+                if(campo.length !=""){
+                    boton.disabled = false;
+                } else{
+                    boton.disabled = true;
+                } 
+            }
+            </script>
+          <a href="#">Reenviar instrucciones de confirmacion</a> 
+
+                <div class="contenedor_ingresar">
+                    <button class="button1" id="Ingresar" >Ingresar</button>
+                </div>
+                <h3>O bien</h3>
+                <div class="contenedor_google">
+                    <button  class="button2" id="google"><img class="google_logo" src="imges/logo_google.jpg" alt="">Continuar con Google</button>
+                </div>
+        </div>
+        
+    </body>
+</html>
